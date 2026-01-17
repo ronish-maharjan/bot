@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Chatbot App</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Chatbot</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Chat Section -->
+    <div class="container chat-wrapper">
+      <h2 class="text-center mb-4">Chatbot App</h2>
+
+      <!-- Chat Header -->
+      <div class="chat-header d-flex align-items-center">
+        <img src="./img/robot.png" alt="Bot" class="chat-avatar" />
+        <div>
+          <h6 class="mb-0">Chatbot</h6>
+          <small class="text-success">● Online</small>
+        </div>
+      </div>
+
+      <!-- Chat Messages -->
+      <div id="chatContainer" class="chat-box"></div>
+
+      <!-- Input -->
+      <div class="input-group chat-input">
+        <input
+          id="textbox"
+          type="text"
+          class="form-control"
+          placeholder="Type your message..."
+        />
+        <button id="sendButton" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
