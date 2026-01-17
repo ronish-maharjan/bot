@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,31 +17,35 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
 
     <title>Chatbot App</title>
-  </head>
 
+    <style>
+    </style>
+  </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">Chatbot</a>
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
 
     <!-- Chat Section -->
-    <div class="container chat-wrapper">
+    <div class="container chat-wrapper d-flex flex-column">
       <h2 class="text-center mb-4">Chatbot App</h2>
 
       <!-- Chat Header -->
-      <div class="chat-header d-flex align-items-center">
-        <img src="./img/robot.png" alt="Bot" class="chat-avatar" />
+      <div class="chat-header d-flex align-items-center mb-2">
+        <img src="/img/robot.png" alt="Bot" class="chat-avatar" />
         <div>
           <h6 class="mb-0">Chatbot</h6>
           <small class="text-success">● Online</small>
@@ -49,10 +53,10 @@
       </div>
 
       <!-- Chat Messages -->
-      <div id="chatContainer" class="chat-box"></div>
+      <div id="chatContainer" class="chat-box d-flex flex-column"></div>
 
       <!-- Input -->
-      <div class="input-group chat-input">
+      <div class="chat-input mt-2">
         <input
           id="textbox"
           type="text"
@@ -63,7 +67,8 @@
       </div>
     </div>
 
-    <script src="./js/script.js"></script>
+    <!-- JS -->
+    <script src ="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
